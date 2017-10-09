@@ -1,0 +1,34 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": 0,
+      "geometry": {"type": "Point", "coordinates": [53.882428, 30.408592]},
+      "properties": {"balloonContent": "Магазин № 25, г. Могилев, Витебский пр-кт, 9", "clusterCaption": "Магазин № 25", "hintContent": "Магазин № 25, г. Могилев, Витебский пр-кт, 9"},
+      "options": {"iconColor": "#f5a63b", "preset": "islands#orangeIcon"}
+    },
+    {
+      "type": "Feature",
+      "id": 1,
+      "geometry": {"type": "Point", "coordinates": [53.133789, 29.227200]},
+      "properties": {"balloonContent": "Квартал вкуса № 7, г. Бобруйск, ул. Социалистическая, 77", "clusterCaption": "Квартал вкуса № 7", "hintContent": "Квартал вкуса № 7, г. Бобруйск, ул. Социалистическая, 77"},
+      "options": {"iconColor": "#f5a63b", "preset": "islands#orangeIcon"}
+    },
+    {
+      "type": "Feature",
+      "id": 2,
+      "geometry": {"type": "Point", "coordinates": [53.871090, 30.326773]},
+      "properties": {"balloonContent": "Магазин № 4, г. Могилев, ул. Островского, 1в", "clusterCaption": "Магазин № 4", "hintContent": "Магазин № 4, г. Могилев, ул. Островского, 1в"},
+      "options": {"iconColor": "#f5a63b", "preset": "islands#orangeIcon"}
+    },
+    {
+      "type": "Feature",
+      "id": 3,
+      "geometry": {"type": "Point", "coordinates": [53.861363, 27.566035]},
+      "properties": {"balloonContent": "Магазин № 11, г. Минск, ул. Авроровская,8-132", "clusterCaption": "Магазин № 11", "hintContent": "Магазин № 11, г. Минск, ул. Авроровская,8-132"},
+      "options": {"iconColor": "#f5a63b", "preset": "islands#orangeIcon"}
+    }
+
+  ]
+}

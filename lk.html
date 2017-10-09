@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Jade Layout Template</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <link rel="stylesheet" media="all" href="css/screen.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru-RU"></script>
+  </head>
+  <body style="-webkit-font-smoothing: antialiased;">
+    <script type="text/javascript">
+      !function(e){function t(o){if(n[o])return n[o].exports;var c=n[o]={exports:{},id:o,loaded:!1};return e[o].call(c.exports,c,c.exports,t),c.loaded=!0,c.exports}var n={};return t.m=e,t.c=n,t.p="/assets/",t(0)}({0:function(e,t,n){n(18),n(19)},18:function(e,t){!function(){"use strict";function e(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function t(e){return window.localStorage&&localStorage.font_css_cache}function n(){if(window.localStorage&&window.XMLHttpRequest)if(t(c))o(localStorage.font_css_cache);else{var e=new XMLHttpRequest;e.open("GET",c,!0),e.onreadystatechange=function(){4===e.readyState&&(o(e.responseText),localStorage.font_css_cache=e.responseText,localStorage.font_css_cache_file=c)},e.send()}else{var n=document.createElement("link");n.href=c,n.rel="stylesheet",n.type="text/css",document.getElementsByTagName("head")[0].appendChild(n),document.cookie="font_css_cache"}}function o(e){var t=document.createElement("style");t.setAttribute("type","text/css"),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e,document.getElementsByTagName("head")[0].appendChild(t),window.onFontLoad&&window.onFontLoad()}var c=window.fonts_href||"css/font.css";window.localStorage&&localStorage.font_css_cache||document.cookie.indexOf("font_css_cache")>-1?n():e(window,"load",n)}()},19:function(e,t){}});
+      
+    </script>
+    <div class="svg-defs-container" style="display: none;"><svg xmlns="http://www.w3.org/2000/svg"><symbol id="icon-rss" viewBox="0 0 30 30"><path clip-rule="evenodd" fill="none" d="M64.3-1392v-8.5h37v-.5c-2.7-1.7-12-10.6-13-13.5 2.2-1.5 3.3-4.1 6-5 5.3 5.5 10.7 11 16 16.5 2.2 2.2 5.8 4 6.5 7.5-5.5 5.3-11 10.7-16.5 16-2.1 2.1-4 5.4-7 6.5-1.5-2.2-4.1-3.3-5-6 4.3-4.2 8.7-8.3 13-12.5v-.5h-37z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M15 0C6.7 0 0 6.7 0 15s6.7 15 15 15 15-6.7 15-15S23.3 0 15 0zm-2.8 20.5c-.9 0-1.7-.8-1.7-1.7 0-.9.8-1.7 1.7-1.7.9 0 1.7.8 1.7 1.7.1 1-.7 1.7-1.7 1.7zm4.8 0c-.7 0-1.2-.5-1.2-1.2 0-2.3-1.8-4.1-4.1-4.1-.7 0-1.2-.5-1.2-1.2s.5-1.2 1.2-1.2c3.6 0 6.5 2.9 6.5 6.5 0 .7-.5 1.2-1.2 1.2zm4.3 0c-.7 0-1.2-.6-1.2-1.2 0-4.6-3.7-8.3-8.3-8.3-.7 0-1.2-.6-1.2-1.2s.6-1.2 1.2-1.2c5.9 0 10.8 4.8 10.8 10.8-.1.6-.6 1.1-1.3 1.1z"/></symbol></svg></div>
+    <!--BEGIN out-->
+    <header class="header">
+      <div class="container-wrapper"><a class="logo header-logo" href="#" style="background-image:url('img/logo.png');"></a>
+        <nav class="menu">
+          <ul>
+            <li><a class="link-anchor-menu" href="#gifts">Призы</a></li>
+            <li><a href="news.html">новости</a></li>
+            <li><a class="link-anchor-menu" href="#map">карта магазинов</a></li>
+            <li><a href="#">правила участия</a></li>
+          </ul>
+        </nav><a class="btn-link-green" href="registrashion-chek.html">Зарегистрировать чек</a>
+      </div>
+    </header>
+    <div class="out">
+      <div class="container-main">
+        <section class="container">
+          <div class="container-wrapper row">
+            <div class="wrapper">
+              <div class="title">Личный кабинет</div>
+              <div class="container-tabs">
+                <div class="container-tab-btn">
+                  <div class="tabs-link current-t" data-tab="tab-1">Регистрация чека</div>
+                  <div class="tabs-link" data-tab="tab-2">Внесенные чеки</div>
+                  <div class="tabs-link" data-tab="tab-3">Личные данные</div>
+                </div>
+                <div class="container-content tabs-content current-t" id="tab-1">
+                  <div class="wrapper-form">
+                    <form class="js-form">
+                      <div class="wrapper-block-inputs">
+                        <div class="wrapper-block-inputs_title">Регистрация чека</div>
+                        <div class="container-add">
+                          <div class="block-add">
+                            <div class="block-input-label width-block-43">
+                              <label class="label">Номер чека</label>
+                              <input class="input-box" type="text" data-validation="custom" data-validation-regexp="^[0-9 ]+$" data-validation-error-msg="Заполните поле">
+                            </div>
+                            <div class="block-input-label width-block-25">
+                              <label class="label">Номер покупки</label>
+                              <input class="input-box" type="text" data-validation="custom" data-validation-regexp="^[0-9 ]+$" data-validation-error-msg="&amp;nbsp;">
+                            </div>
+                            <div class="block-input-label width-block-25">
+                              <label class="label">Номер покупки</label>
+                              <input class="input-box" type="text" data-validation="custom required" data-validation-error-msg="&amp;nbsp;">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="btn-block-add">Внести ещё один чек</div>
+                        <div class="box-btn-form">
+                          <button class="btn-form">Зарегистрировать чек</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <!-- Modal Window-->
+                  <div class="wrapper-form response" style="display: none;">
+                    <div class="wrapper-form">
+                      <div class="wrapper-block-inputs">
+                        <div class="wrapper-block-inputs_title">Спасибо за обращение!</div>
+                        <div class="modal-container_txt">
+                          <p>Ваше сообщение успешно отправлено.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="container-content tabs-content" id="tab-2">
+                  <div class="wrapper-form">
+                    <form class="js-form">
+                      <div class="wrapper-block-inputs">
+                        <div class="wrapper-block-inputs_title">Ваши чеки</div>
+                        <div class="snipet-table">
+                          <div class="container-table-check">
+                            <div class="table-check_head">
+                              <div class="table-check_head-block">Промо-код</div>
+                              <div class="table-check_head-block">Ваш чек</div>
+                              <div class="table-check_head-block">Статус</div>
+                            </div>
+                            <div class="table-check_body">
+                              <div class="table-check_body-row">
+                                <!-- В игре или Не выиграл-->
+                                <div class="block-in-game">
+                                  <div class="table-check_body-block">000991</div>
+                                  <div class="table-check_body-block">0000000031</div>
+                                  <div class="table-check_body-block">В игре</div>
+                                </div>
+                              </div>
+                              <div class="table-check_body-row">
+                                <!-- Отмена(добавляем класс .cancel)-->
+                                <div class="block-cancel-ok cancel">
+                                  <div class="table-check_body-code">001800</div>
+                                  <div class="table-check_body-check-st">
+                                    <div class="block-row">
+                                      <div class="block-row_ckeck">0001232131</div>
+                                      <div class="block-row_status">Отменен</div>
+                                    </div>
+                                    <div class="block-row-big">
+                                      <div class="icon"></div>
+                                      <div class="block-row-big_txt">Узнать причину отмены:</div>
+                                      <div class="block-row-big_tel">+375172667445</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="table-check_body-row">
+                                <!-- В игре или Не выиграл-->
+                                <div class="block-in-game">
+                                  <div class="table-check_body-block">002991</div>
+                                  <div class="table-check_body-block">9090910293</div>
+                                  <div class="table-check_body-block">В игре</div>
+                                </div>
+                              </div>
+                              <div class="table-check_body-row">
+                                <!-- Отмена(добавляем класс .ok)-->
+                                <div class="block-cancel-ok ok">
+                                  <div class="table-check_body-code">002992</div>
+                                  <div class="table-check_body-check-st">
+                                    <div class="block-row">
+                                      <div class="block-row_ckeck">1293480912</div>
+                                      <div class="block-row_status">Выиграл!</div>
+                                    </div>
+                                    <div class="block-row-big">
+                                      <div class="icon"></div><a class="block-row-big_txt" href="#">Узнать выигрыш в новостях</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="table-check_body-row">
+                                <!-- В игре или Не выиграл-->
+                                <div class="block-in-game">
+                                  <div class="table-check_body-block">002993</div>
+                                  <div class="table-check_body-block">1298309381</div>
+                                  <div class="table-check_body-block">Не выиграл</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="container-content tabs-content" id="tab-3">
+                  <div class="wrapper-form">
+                    <form class="js-form">
+                      <div class="wrapper-block-inputs line-btn">
+                        <div class="wrapper-block-inputs_title">Личные данные</div>
+                        <div class="block-input-label">
+                          <label class="label">Фамилия Имя Отчество</label>
+                          <input class="input-box" data-validation="length  required" type="text" data-validation-length="min3" data-validation-error-msg="Заполните поле">
+                        </div>
+                        <div class="block-input-label">
+                          <label class="label">E-mail</label>
+                          <input class="input-box" data-validation="email" type="email" data-validation-error-msg="Заполните поле">
+                        </div>
+                        <div class="block-input-label">
+                          <label class="label">Телефон</label>
+                          <input class="input-box" type="tel" data-validation="custom" data-validation-regexp="^[-0-9()+ ]+$" data-validation-error-msg="Заполните поле">
+                        </div>
+                        <div class="block-input-label">
+                          <label class="label">Населённый пункт</label>
+                          <input class="input-box" type="text" data-validation="custom required" data-validation-error-msg="Укажите населённый пункт, используя только киррилицу">
+                        </div>
+                        <div class="block-input-label width-block-50">
+                          <label class="label">Улица</label>
+                          <input class="input-box" type="text" data-validation="custom required" data-validation-error-msg="Заполните поле">
+                        </div>
+                        <div class="block-input-label width-block-14">
+                          <label class="label">Дом</label>
+                          <input class="input-box" type="text" data-validation="custom" data-validation-regexp="^[0-9 ]+$" data-validation-error-msg="&amp;nbsp;">
+                        </div>
+                        <div class="block-input-label width-block-14">
+                          <label class="label">Корпус</label>
+                          <input class="input-box" type="text">
+                        </div>
+                        <div class="block-input-label width-block-14">
+                          <label class="label">Квартира</label>
+                          <input class="input-box" type="text" data-validation="custom" data-validation-regexp="^[0-9 ]+$" data-validation-error-msg="&amp;nbsp;">
+                        </div>
+                      </div>
+                      <div class="wrapper-block-inputs">
+                        <div class="wrapper-block-inputs_title">Изменить пароль</div>
+                        <div class="block-input-label">
+                          <label class="label">Новый пароль</label>
+                          <input class="input-box" type="password" data-validation="custom required" data-validation-error-msg="Заполните поле">
+                        </div>
+                        <div class="block-input-label">
+                          <label class="label">Подтвердить пароль</label>
+                          <input class="input-box" type="password" data-validation="custom required" data-validation-error-msg="Заполните поле">
+                        </div>
+                        <div class="box-btn-form">
+                          <button class="btn-form">Сохранить</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <!-- Modal Window-->
+                  <div class="wrapper-form response" style="display: none;">
+                    <div class="wrapper-form">
+                      <div class="wrapper-block-inputs">
+                        <div class="wrapper-block-inputs_title">Спасибо за обращение!</div>
+                        <div class="modal-container_txt">
+                          <p>Ваше сообщение успешно отправлено.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!--END out-->
+    <footer class="footer gray">
+      <div class="container-wrapper">
+        <div class="wrapper">
+          <div class="block-logo-footer"><a class="logo" href="#" style="background-image:url('img/logo.png');"></a></div>
+          <div class="wrapper-txt">
+            <p>Рекламная игра «Играй со вкусом». Срок проведения рекламной игры: 15.06.2017 — 15.09.2017. Подробности правил рекламной игры нсмотрите <a href="#"> по ссылке </a>. Организатор Частное предприятие «Квартал Вкуса», УНП 190791154. Свидетельство о регистрации №3031 от 09 июня 2017 г., выдано Министерством антимонопольного регулирования и торговли РБ. Территория проведения: торговые объекты сети «Квартал Вкуса», находящиеся на территории Республики Беларусь.</p>
+            <p>© 2017, Квартал Вкуса</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/lib.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+    <script src="js/common.min.js"></script>
+  </body>
+</html>
