@@ -24,7 +24,7 @@
             <li><a class="link-anchor-menu" href="#map">карта магазинов</a></li>
             <li><a href="#">правила участия</a></li>
           </ul>
-        </nav><a class="btn-link-green" href="registrashion-chek.html">Зарегистрировать чек</a>
+        </nav><a class="btn-link-green" href="registrashion-chek.html">Зарегистрироваться</a>
       </div>
     </header>
     <div class="out">
@@ -35,34 +35,33 @@
               <div class="title">Личный кабинет</div>
               <div class="container-tabs">
                 <div class="container-tab-btn">
-                  <div class="tabs-link current-t" data-tab="tab-1">Регистрация чека</div>
-                  <div class="tabs-link" data-tab="tab-2">Внесенные чеки</div>
+                  <div class="tabs-link current-t" data-tab="tab-1">Мои карточки</div>
+                  <div class="tabs-link" data-tab="tab-2">Внесенные промо-коды</div>
                   <div class="tabs-link" data-tab="tab-3">Личные данные</div>
                 </div>
                 <div class="container-content tabs-content current-t" id="tab-1">
                   <div class="wrapper-form">
                     <form class="js-form">
+                      <div class="wrapper-block-inputs line-btn">
+                        <div class="wrapper-block-inputs_title">Номера карточек</div>
+                        <ol class="block-list-card">
+                          <li>0230503</li>
+                          <li>0260503</li>
+                        </ol>
+                      </div>
                       <div class="wrapper-block-inputs">
-                        <div class="wrapper-block-inputs_title">Регистрация чека</div>
+                        <div class="wrapper-block-inputs_title">Добавить карточку</div>
                         <div class="container-add">
                           <div class="block-add">
-                            <div class="block-input-label width-block-43">
-                              <label class="label">Номер чека</label>
+                            <div class="block-input-label">
+                              <label class="label">Номер карточки</label><a class="link-popup" href="javascript:;" data-fancybox data-src="#info-card">Что это такое?</a>
                               <input class="input-box" type="text" data-validation="custom" data-validation-regexp="^[0-9 ]+$" data-validation-error-msg="Заполните поле">
-                            </div>
-                            <div class="block-input-label width-block-25">
-                              <label class="label">Номер покупки</label>
-                              <input class="input-box" type="text" data-validation="custom" data-validation-regexp="^[0-9 ]+$" data-validation-error-msg="&amp;nbsp;">
-                            </div>
-                            <div class="block-input-label width-block-25">
-                              <label class="label">Номер покупки</label>
-                              <input class="input-box" type="text" data-validation="custom required" data-validation-error-msg="&amp;nbsp;">
                             </div>
                           </div>
                         </div>
-                        <div class="btn-block-add">Внести ещё один чек</div>
+                        <div class="btn-block-add">Внести еще одну карточку</div>
                         <div class="box-btn-form">
-                          <button class="btn-form">Зарегистрировать чек</button>
+                          <button class="btn-form">Добавить</button>
                         </div>
                       </div>
                     </form>
@@ -83,12 +82,12 @@
                   <div class="wrapper-form">
                     <form class="js-form">
                       <div class="wrapper-block-inputs">
-                        <div class="wrapper-block-inputs_title">Ваши чеки</div>
+                        <div class="wrapper-block-inputs_title">Ваши промо-коды</div>
                         <div class="snipet-table">
                           <div class="container-table-check">
                             <div class="table-check_head">
                               <div class="table-check_head-block">Промо-код</div>
-                              <div class="table-check_head-block">Ваш чек</div>
+                              <div class="table-check_head-block">Дата</div>
                               <div class="table-check_head-block">Статус</div>
                             </div>
                             <div class="table-check_body">
@@ -96,7 +95,7 @@
                                 <!-- В игре или Не выиграл-->
                                 <div class="block-in-game">
                                   <div class="table-check_body-block">000991</div>
-                                  <div class="table-check_body-block">0000000031</div>
+                                  <div class="table-check_body-block">01.01.2017</div>
                                   <div class="table-check_body-block">В игре</div>
                                 </div>
                               </div>
@@ -106,7 +105,7 @@
                                   <div class="table-check_body-code">001800</div>
                                   <div class="table-check_body-check-st">
                                     <div class="block-row">
-                                      <div class="block-row_ckeck">0001232131</div>
+                                      <div class="block-row_ckeck">01.01.2017</div>
                                       <div class="block-row_status">Отменен</div>
                                     </div>
                                     <div class="block-row-big">
@@ -121,7 +120,7 @@
                                 <!-- В игре или Не выиграл-->
                                 <div class="block-in-game">
                                   <div class="table-check_body-block">002991</div>
-                                  <div class="table-check_body-block">9090910293</div>
+                                  <div class="table-check_body-block">01.01.2017</div>
                                   <div class="table-check_body-block">В игре</div>
                                 </div>
                               </div>
@@ -131,11 +130,12 @@
                                   <div class="table-check_body-code">002992</div>
                                   <div class="table-check_body-check-st">
                                     <div class="block-row">
-                                      <div class="block-row_ckeck">1293480912</div>
+                                      <div class="block-row_ckeck">01.01.2017</div>
                                       <div class="block-row_status">Выиграл!</div>
                                     </div>
                                     <div class="block-row-big">
-                                      <div class="icon"></div><a class="block-row-big_txt" href="#">Узнать выигрыш в новостях</a>
+                                      <div class="icon"></div>
+                                      <div class="block-row-big_txt">Тут написан выигрыш</div>
                                     </div>
                                   </div>
                                 </div>
@@ -144,7 +144,7 @@
                                 <!-- В игре или Не выиграл-->
                                 <div class="block-in-game">
                                   <div class="table-check_body-block">002993</div>
-                                  <div class="table-check_body-block">1298309381</div>
+                                  <div class="table-check_body-block">01.01.2017</div>
                                   <div class="table-check_body-block">Не выиграл</div>
                                 </div>
                               </div>
@@ -239,6 +239,17 @@
         </div>
       </div>
     </footer>
+    <div id="info-card" style="display: none;">
+      <div class="container-txt"><img src="img/img-new.png" alt="#">
+        <ol>
+          <li>Это 1</li>
+          <li>Это 2</li>
+          <li>Это 3</li>
+          <li>Это 4</li>
+        </ol>
+        <p>Рекламная игра «Играй со вкусом». Срок проведения рекламной игры: 15.06.2017 — 15.09.2017. Подробности правил рекламной игры смотрите по ссылке. Организатор Частное предприятие «Квартал Вкуса», УНП 190791154. Свидетельство о регистрации №3031 от 09 июня 2017 г., выдано Министерством антимонопольного регулирования и торговли РБ. Территория проведения: торговые объекты сети «Квартал Вкуса», находящиеся на территории Республики Беларусь.</p>
+      </div>
+    </div>
     <script src="js/lib.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
     <script src="js/common.min.js"></script>
